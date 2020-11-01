@@ -563,7 +563,7 @@ CDF=function(ml,breaks=100){
     #proportional increase relative to prior K.
     deltaK = c(deltaK,( areaK[i] - areaK[i-1])/areaK[i-1])
   }
-  plot(1+(1:length(deltaK)),y=deltaK,xlab="k",ylab="relative change in area under CDF curve",main="Delta area",type="b",cex.main=1.5, cex.lab=1.5, cex.axis=1.5)
+  plot(1+(1:length(deltaK)),y=deltaK,xlab="k",ylab="relative change in area under CDF curve",main="Delta area",type="b",cex.main=15, cex.lab=15, cex.axis=15)
 }
 
 
