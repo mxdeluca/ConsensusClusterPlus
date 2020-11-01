@@ -535,7 +535,7 @@ sampleCols <- function( d,
 
 CDF=function(ml,breaks=100){
   #plot CDF distribution
-  plot(c(0),xlim=c(0,1),ylim=c(0,1),col="white",bg="white",xlab="consensus index",ylab="CDF",main="consensus CDF", las=2)
+  plot(c(0),xlim=c(0,1),ylim=c(0,1),col="white",bg="white",xlab="consensus index",ylab="CDF",main="consensus CDF", las=2,,cex.main=1.5, cex.lab=1.5, cex.axis=1.5, cex.legend = 1.5)
   k=length(ml)
   this_colors = rainbow(k-1)
   areaK = c()
@@ -563,7 +563,7 @@ CDF=function(ml,breaks=100){
     #proportional increase relative to prior K.
     deltaK = c(deltaK,( areaK[i] - areaK[i-1])/areaK[i-1])
   }
-  plot(1+(1:length(deltaK)),y=deltaK,xlab="k",ylab="relative change in area under CDF curve",main="Delta area",type="b",cex.main=15, cex.lab=15, cex.axis=15)
+  plot(1+(1:length(deltaK)),y=deltaK,xlab="k",ylab="relative change in area under CDF curve",main="Delta area",type="b",cex.main=1.5, cex.lab=1.5, cex.axis=1.5)
 }
 
 
